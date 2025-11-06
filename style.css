@@ -8,7 +8,7 @@
     
 }
 body{
-    background-color: aqua;
+    background: linear-gradient(123.69006752597977deg, #3f87a6 0%, #ebf8e1 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,6 +28,9 @@ body{
     gap: 20px;
     width: 100%;
     max-width: 500px;
+}
+h1{
+  font-size: clamp(1.5em, 5vw, 2em);
 }
 .input-row{
   display: flex;
@@ -52,7 +55,7 @@ body{
   border-radius: 8px;
 }
 .input-row button {
-	background-color: #25d366;
+	background-color: #374151;
 	color: white;
 	border: none;
 	padding: 13px;
@@ -61,8 +64,35 @@ body{
 	cursor: pointer;
 	transition: background-color 0.2s ease;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .input-row button:hover {
-	background-color: #1ebe5d;
+	background-color: #2f3949;
+}
+.generate-button {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.generate-button a{
+	color: white;
+	border: none;
+	padding: 13px;
+	border-radius: 8px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+  text-decoration: none;
+}
+.wa-button{
+  background-color: #25d366;
+}
+.wa-button:hover{
+  background-color: #1ebe5d;
+}
+.telegram-button{
+  background-color: #24a1de;
+}
+.telegram-button:hover{
+  background-color: #2091c8;
 }
