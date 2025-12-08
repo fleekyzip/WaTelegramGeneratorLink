@@ -1,4 +1,4 @@
-# Wa-TelegramGeneratorLink
+# WaTelegramGeneratorLink
 
 Proyek sederhana berbasis web untuk mempermudah pembuatan tautan (link) cepat ke **WhatsApp** dan **Telegram** yang sudah dilengkapi dengan nomor tujuan.
 
