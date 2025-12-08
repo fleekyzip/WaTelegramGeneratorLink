@@ -124,10 +124,10 @@ document
 			document.getElementById("phone-number").value;
 
 		// Cari data negara yang dipilih
-		const selectedData = countriesData.find(function (item) {
-			return item.code === selectedCode;
-		});
-		console.log(selectedData);
+		// const selectedData = countriesData.find(function (item) {
+		// 	return item.code === selectedCode;
+		// });
+		// console.log(selectedData);
 
 		// ========== GENERATE LINK ==========
 		const whatsappLink = `https://wa.me/${selectedCode}${rawPhoneNumber}`;
