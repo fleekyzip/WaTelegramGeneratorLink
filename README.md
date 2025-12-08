@@ -26,7 +26,7 @@ Proyek ini adalah aplikasi web statis *pure frontend* dan tidak memerlukan *serv
 * **HTML5:** Untuk struktur dasar antarmuka pengguna.
 * **CSS3:** Untuk styling dan tata letak aplikasi.
 * **JavaScript (Vanilla JS):** Untuk fungsionalitas utama logika generator tautan.
-* **`choices.js`:** Digunakan untuk *styling* dan fungsionalitas dropdown (misalnya, pemilihan kode negara).
+* **[Choise.js:](https://github.com/Choices-js/Choices)** Digunakan untuk *styling* dan fungsionalitas dropdown (misalnya, pemilihan kode negara).  
 
 <br>
 
