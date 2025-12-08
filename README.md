@@ -1,6 +1,6 @@
 # Wa-TelegramGeneratorLink
 
-Proyek sederhana berbasis web untuk mempermudah pembuatan tautan (link) cepat ke **WhatsApp** dan **Telegram** yang sudah dilengkapi dengan nomor tujuan dan pesan yang telah dikustomisasi.
+Proyek sederhana berbasis web untuk mempermudah pembuatan tautan (link) cepat ke **WhatsApp** dan **Telegram** yang sudah dilengkapi dengan nomor tujuan.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://wa-telegram-generator-link.vercel.app/)
 
@@ -12,8 +12,8 @@ Anda dapat mencoba versi demo aplikasi ini secara langsung di sini: [Demo Langsu
 
 Aplikasi ini menawarkan kemudahan dalam menghasilkan tautan instan tanpa perlu mengingat format URL tertentu.
 
-* **Generator Tautan WhatsApp:** Membuat tautan `wa.me/` yang dapat langsung diklik, opsional dengan pesan yang sudah terisi (`text=`).
-* **Generator Tautan Telegram:** Membuat tautan `t.me/` atau `telegram.me/` berdasarkan username.
+* **Generator Tautan WhatsApp:** Membuat tautan `wa.me/` disertai nomor tujuan yang dapat langsung diklik
+* **Generator Tautan Telegram:** Membuat tautan `t.me/` disertai nomor tujuan yang dapat langsung diklik
 * **Dukungan Kode Negara (Country Code):** Integrasi data negara (`countries.json`) untuk memudahkan penambahan kode telepon internasional pada tautan WhatsApp.
 * **Antarmuka Pengguna yang Bersih:** Dibuat menggunakan HTML, CSS, dan JavaScript murni.
 
@@ -82,12 +82,10 @@ WaTelegramGeneratorLink/
 
 Setelah Anda membuka `index.html` di peramban Anda, ikuti langkah-langkah ini:
 
-1.  **Pilih Tipe Tautan:** Pilih antara **WhatsApp** atau **Telegram**.
-2.  **Masukkan Detail:**
-    * **Untuk WhatsApp:** Pilih Kode Negara, masukkan Nomor Telepon, dan tulis Pesan (opsional).
-    * **Untuk Telegram:** Masukkan Username Telegram (tanpa simbol `@`).
-3.  **Hasilkan Tautan:** Setelah semua data terisi, tautan akan otomatis dihasilkan dan ditampilkan di area hasil.
-4.  **Salin dan Bagikan:** Anda dapat menyalin tautan yang dihasilkan dan membagikannya ke mana saja.
+1.  **Masukkan Detail:** Pilih Kode Negara dan masukkan Nomor Telepon.  
+2.  **Hasilkan Tautan:** Setelah semua data terisi, tekan tombol **Generate Link** maka tautan akan otomatis dihasilkan dan ditampilkan di area hasil.
+3.  **Pilih Tipe Tautan:** Pilih antara **WhatsApp** atau **Telegram**.
+
 
 <br>
 
