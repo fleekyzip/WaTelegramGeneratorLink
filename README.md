@@ -1,6 +1,10 @@
-# WaTelegramGeneratorLink
+# Wa-TelegramGeneratorLink
 
 Proyek sederhana berbasis web untuk mempermudah pembuatan tautan (link) cepat ke **WhatsApp** dan **Telegram** yang sudah dilengkapi dengan nomor tujuan dan pesan yang telah dikustomisasi.
+
+[![Deploy with Vercel](https://vercel.com/button)]([URL_VERCEL_ANDA])
+
+Anda dapat mencoba versi demo aplikasi ini secara langsung di sini: [Demo Langsung Aplikasi]([URL_VERCEL_ANDA])
 
 <br>
 
