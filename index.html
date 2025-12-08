@@ -8,7 +8,13 @@
 			href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+		/>
+
 		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="choices.css" />
 	</head>
 	<body>
 		<div class="card">
@@ -16,27 +22,41 @@
 				Whatsapp / Telegram<br />
 				Generator Link
 			</h1>
-			<div class="input-row">
-				<select name="region" id="region" required>
-					<option value="tes">tesssss</option>
-					<option value="tes1">tess</option>
-					<option value="tes2">tesssss</option>
-				</select>
+			<form id="phone-form" class="input-row">
+				<select name="country-code" id="country-code"></select>
 				<input
 					type="tel"
-					id="nomor"
-					name="nomor"
-					placeholder="811-1111-1111"
+					id="phone-number"
+					name="phone-number"
+					placeholder="812-1234-1234"
 					autocomplete="off"
-					pattern="[0-9]{5,20}"
 					required
 				/>
-				<button type="submit">Generate Link</button>
-			</div>
-			<div class="generate-button">
-				<a class="wa-button" href="">Whatsapp Link</a>
-				<a class="telegram-button" href="">Telegram Link</a>
+				<button id="submit-button" type="submit">Generate Link</button>
+			</form>
+			<div id="generate-button" class="generate-button hidden">
+				<a id="wa-button" class="wa-button" href="" target="_blank">
+					<img
+						class="icon"
+						src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000"
+						alt=""
+					/>
+					<span>Whatsapp Link</span></a
+				>
+				<a id="tele-button" class="tele-button" href="" target="_blank">
+					<img
+						class="icon"
+						src="https://img.icons8.com/?size=100&id=63306&format=png&color=000000"
+						alt=""
+					/>
+					<span>Telegram Link</span>
+				</a>
 			</div>
 		</div>
+
+		<!-- Select2 JS -->
+		<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+		<script src="script.js"></script>
 	</body>
 </html>

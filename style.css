@@ -1,58 +1,64 @@
-*{
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    margin: 0;
-    padding: 0;
-    
+* {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+	margin: 0;
+	padding: 0;
 }
-body{
-    background: linear-gradient(123.69006752597977deg, #3f87a6 0%, #ebf8e1 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    height: 100dvh;
-    padding: 0px 20px 0px 20px;
+body {
+	background: linear-gradient(
+		123.69006752597977deg,
+		#3f87a6 0%,
+		#ebf8e1 100%
+	);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	height: 100dvh;
+	padding: 0px 20px 0px 20px;
 }
-.card{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color: pink;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    border-radius: 10px;
-    padding: 20px;
-    gap: 20px;
-    width: 100%;
-    max-width: 500px;
+.card {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	background-color: pink;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	border-radius: 10px;
+	padding: 20px;
+	gap: 20px;
+	width: 100%;
+	max-width: 500px;
 }
-h1{
-  font-size: clamp(1.5em, 5vw, 2em);
+h1 {
+	font-size: clamp(1.5em, 5vw, 2em);
 }
-.input-row{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-
+.input-row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
 }
 .input-row select {
-  flex: 1;
-  min-width: 100px;
-  padding: 13px;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
+	background-color: white;
+	flex: 1;
+	/* min-width: 200px; */
+	padding: 13px;
+	font-size: 16px;
+	border: none;
+	border-radius: 8px;
 }
 .input-row input {
-  flex: 3;
-  min-width: 300px;
-  padding: 13px;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
+	flex: 1;
+	/* min-width: 300px; */
+	padding: 13px;
+	font-size: 16px;
+	border: none;
+	border-radius: 8px;
+}
+.input-row input:focus {
+	outline: none;
 }
 .input-row button {
 	background-color: #374151;
@@ -63,36 +69,61 @@ h1{
 	font-size: 16px;
 	cursor: pointer;
 	transition: background-color 0.2s ease;
-  width: 100%;
-  margin-bottom: 10px;
+	width: 100%;
+	margin-bottom: 10px;
 }
 .input-row button:hover {
 	background-color: #2f3949;
 }
 .generate-button {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
 }
-.generate-button a{
+.generate-button a {
 	color: white;
 	border: none;
-	padding: 13px;
+	height: 47px;
 	border-radius: 8px;
 	font-size: 16px;
 	cursor: pointer;
 	transition: background-color 0.2s ease;
-  text-decoration: none;
+	text-decoration: none;
 }
-.wa-button{
-  background-color: #25d366;
+.generate-button .wa-button,
+.generate-button .tele-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-.wa-button:hover{
-  background-color: #1ebe5d;
+.wa-button {
+	background-color: #25d366;
 }
-.telegram-button{
-  background-color: #24a1de;
+.wa-button:hover {
+	background-color: #1ebe5d;
 }
-.telegram-button:hover{
-  background-color: #2091c8;
+.tele-button {
+	background-color: #24a1de;
+}
+.tele-button:hover {
+	background-color: #2091c8;
+}
+
+.wa-button,
+.tele-button {
+	gap: 5px;
+}
+
+.input-row label {
+	font-weight: 600;
+	margin-bottom: 6px;
+	color: #333;
+}
+
+.hidden {
+	display: none;
+}
+
+.icon {
+	width: 35px;
 }
