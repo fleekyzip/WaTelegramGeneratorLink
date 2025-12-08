@@ -3,6 +3,7 @@
 // ============================================
 let countriesData = [];
 let choicesInstance; // Untuk menyimpan instance Choices.js
+let lastDigitLength = 0;
 
 // ============================================
 // INISIALISASI SAAT HALAMAN SIAP
@@ -88,16 +89,16 @@ document
 	.getElementById("phone-number")
 	.addEventListener("input", function (event) {
 		// Ambil hanya angka saja
-		let angkaOnly = this.value.replace(/[^0-9]/g, "");
+		let angkaOnly = this.value.replace(/\D/g, "");
 
 		// Format dengan tanda "-"
-		let formatted = formatPhoneNumber(angkaOnly);
+		this.value = formatPhoneNumber(angkaOnly);
 
-		// Tampilkan hasil format
-		this.value = formatted;
-
-		// Sembunyikan tombol generate
-		hideGenerateButtons();
+		//apakah JUMLAH ANGKA berubah?
+		if (angkaOnly.length !== lastDigitLength) {
+			hideGenerateButtons();
+			lastDigitLength = angkaOnly.length;
+		}
 	});
 
 // ============================================
