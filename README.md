@@ -102,5 +102,3 @@ Kontribusi sangat dihargai! Jika Anda memiliki ide untuk fitur baru, perbaikan *
 ## 📜 Lisensi
 
 Proyek ini dilisensikan di bawah **Lisensi MIT**. Lihat file [LICENSE](LICENSE) untuk detail lebih lanjut.
-
-**Isi Lisensi MIT:**
