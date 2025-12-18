@@ -14,8 +14,8 @@
 			href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
 		/>
 
-		<link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" href="choices.css" />
+		<link rel="stylesheet" href="style/style.css" />
+		<link rel="stylesheet" href="style/choices.css" />
 	</head>
 	<body>
 		<div class="card">
@@ -35,29 +35,62 @@
 				/>
 				<button id="submit-button" type="submit">Generate Link</button>
 			</form>
-			<div id="generate-button" class="generate-button hidden">
-				<a id="wa-button" class="wa-button" href="" target="_blank">
-					<img
-						class="icon"
-						src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000"
-						alt=""
-					/>
-					<span>Whatsapp Link</span></a
-				>
-				<a id="tele-button" class="tele-button" href="" target="_blank">
-					<img
-						class="icon"
-						src="https://img.icons8.com/?size=100&id=63306&format=png&color=000000"
-						alt=""
-					/>
-					<span>Telegram Link</span>
-				</a>
+			<div id="generate-output" class="generate-output hidden">
+				<div class="link-item">
+					<a
+						id="wa-button"
+						class="main-link-wa"
+						href=""
+						target="_blank"
+					>
+						<img src="assets/icon-wa.png" />
+						<span>Whatsapp Link</span>
+					</a>
+					<button
+						id="copy-button-wa"
+						type="button"
+						class="copy-button copy-button-wa"
+					>
+						<img
+							src="assets/icon-copy.png"
+							data-default="img/icon-copy.png"
+						/>
+					</button>
+				</div>
+				<div class="link-item">
+					<a
+						id="tele-button"
+						class="main-link-tele"
+						href=""
+						target="_blank"
+					>
+						<img src="assets/icon-telegram.png" />
+						<span>Telegram Link</span>
+					</a>
+					<button
+						id="copy-button-telegram"
+						type="button"
+						class="copy-button copy-button-telegram"
+					>
+						<img
+							src="assets/icon-copy.png"
+							data-default="img/icon-copy.png"
+						/>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div id="notification-container">
+			<div id="custom-alert" clas>
+				<p id="alert-text">
+					tes visibility: hidden; transform: translateX(100%);
+				</p>
 			</div>
 		</div>
 
 		<!-- Select2 JS -->
 		<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
 
-		<script src="script.js"></script>
+		<script src="js/script.js"></script>
 	</body>
 </html>

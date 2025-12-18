@@ -1,0 +1,194 @@
+* {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: linear-gradient(
+		123.69006752597977deg,
+		#3f87a6 0%,
+		#ebf8e1 100%
+	);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	height: 100dvh;
+	padding: 0px 20px 0px 20px;
+}
+.card {
+	display: flex;
+	flex-direction: column;
+	background-color: pink;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	border-radius: 10px;
+	padding: 20px;
+	gap: 20px;
+	width: 100%;
+	max-width: 500px;
+}
+h1 {
+	font-size: clamp(1.5em, 5vw, 2em);
+}
+.input-row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+.input-row select {
+	background-color: white;
+	flex: 9 1 0%;
+	/* min-width: 200px; */
+	padding: 13px;
+	font-size: 16px;
+	border: none;
+	border-radius: 8px;
+}
+.input-row input {
+	flex: 11 1 0%;
+	width: 100%;
+	/* min-width: 300px; */
+	padding: 13px;
+	font-size: 16px;
+	border: none;
+	border-radius: 8px;
+}
+.input-row input:focus {
+	outline: none;
+}
+.input-row button {
+	background-color: #374151;
+	color: white;
+	border: none;
+	padding: 13px;
+	border-radius: 8px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+	flex: 1 1 100%;
+	margin-bottom: 10px;
+}
+.input-row button:hover {
+	background-color: #2f3949;
+}
+.generate-output {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.link-item {
+	display: flex;
+	position: relative;
+	height: 48px;
+}
+
+.link-item .main-link-wa,
+.link-item .main-link-tele {
+	display: flex;
+	flex: 1 1 0;
+	align-items: center;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	padding: 0 10px 0 10px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+	text-decoration: none;
+	gap: 8px;
+	overflow: hidden; /* PENTING: Potong overflow */
+}
+
+.main-link-wa,
+.copy-button-wa {
+	background-color: #25d366;
+	transition: 0.2s;
+}
+
+.main-link-tele,
+.copy-button-telegram {
+	background-color: #24a1de;
+	transition: 0.2s;
+}
+
+.wa-button,
+.tele-button {
+	gap: 5px;
+}
+.hidden {
+	display: none;
+}
+
+.icon {
+	width: 35px;
+}
+
+.copy-button {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	padding: 8px;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	border-radius: 8px;
+	border: none;
+	cursor: pointer;
+	z-index: 1; /* Pastikan tombol copy di atas */
+}
+
+.copy-button:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.link-item:hover .main-link-wa,
+.main-link-wa:hover + .copy-button-wa {
+	background-color: #1ebe5d;
+}
+
+.link-item:hover .main-link-tele,
+.main-link-tele:hover + .copy-button-telegram {
+	background-color: #2091c8;
+}
+
+/* SOLUSI UTAMA: Style untuk span text */
+.link-item .main-link-wa span,
+.link-item .main-link-tele span {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding-right: 40px;
+	flex: 1 1 0;
+	text-align: start;
+}
+
+#notification-container {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 1000;
+}
+
+#custom-alert {
+	background-color: #007bff;
+	color: white;
+	padding: 15px 15px 15px 15px;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	width: 300px;
+	opacity: 100;
+	visibility: hidden;
+	transform: translateX(100%);
+	transition: opacity 0.5s ease-out, transform 0.5s ease-out, visibility 0.5s;
+}
+
+.show-alert {
+	visibility: visible !important;
+	opacity: 1 !important;
+	transform: translateX(0) !important; /* Geser ke posisi akhir */
+}

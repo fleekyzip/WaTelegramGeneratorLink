@@ -12,21 +12,27 @@ Anda dapat mencoba versi demo aplikasi ini secara langsung di sini: [Demo Langsu
 
 Aplikasi ini menawarkan kemudahan dalam menghasilkan tautan instan tanpa perlu mengingat format URL tertentu.
 
-* **Generator Tautan WhatsApp:** Membuat tautan `wa.me/` disertai nomor tujuan yang dapat langsung diklik
-* **Generator Tautan Telegram:** Membuat tautan `t.me/` disertai nomor tujuan yang dapat langsung diklik
-* **Dukungan Kode Negara (Country Code):** Integrasi data negara (`countries.json`) untuk memudahkan penambahan kode telepon internasional pada tautan WhatsApp.
-* **Antarmuka Pengguna yang Bersih:** Dibuat menggunakan HTML, CSS, dan JavaScript murni.
+-   **Generator Tautan WhatsApp:** Membuat tautan `wa.me/` disertai nomor tujuan yang dapat langsung diklik
+-   **Generator Tautan Telegram:** Membuat tautan `t.me/` disertai nomor tujuan yang dapat langsung diklik
+-   **Dukungan Kode Negara (Country Code):** Integrasi data negara (`countries.json`) untuk memudahkan penambahan kode telepon internasional pada tautan WhatsApp.
+-   **Antarmuka Pengguna yang Bersih:** Dibuat menggunakan HTML, CSS, dan JavaScript murni.
+
+<br>
+
+## 🔄 Update
+
+-   18/12/2025. Menambahkan copy to clipboard di button whatsapp dan telegram
 
 <br>
 
 ## 🛠️ Teknologi yang Digunakan
 
-Proyek ini adalah aplikasi web statis *pure frontend* dan tidak memerlukan *server side* (backend) untuk dijalankan.
+Proyek ini adalah aplikasi web statis _pure frontend_ dan tidak memerlukan _server side_ (backend) untuk dijalankan.
 
-* **HTML5:** Untuk struktur dasar antarmuka pengguna.
-* **CSS3:** Untuk styling dan tata letak aplikasi.
-* **JavaScript (Vanilla JS):** Untuk fungsionalitas utama logika generator tautan.
-* **[Choise.js:](https://github.com/Choices-js/Choices)** Digunakan untuk *styling* dan fungsionalitas dropdown (misalnya, pemilihan kode negara).  
+-   **HTML5:** Untuk struktur dasar antarmuka pengguna.
+-   **CSS3:** Untuk styling dan tata letak aplikasi.
+-   **JavaScript (Vanilla JS):** Untuk fungsionalitas utama logika generator tautan.
+-   **[Choise.js:](https://github.com/Choices-js/Choices)** Digunakan untuk _styling_ dan fungsionalitas dropdown (misalnya, pemilihan kode negara).
 
 <br>
 
@@ -45,11 +51,13 @@ Anda hanya memerlukan peramban web modern untuk menjalankan aplikasi ini. Untuk 
 Ikuti langkah-langkah berikut untuk menginstal dan menjalankan proyek secara lokal:
 
 1.  **Kloning Repositori:**
+
     ```bash
     git clone [https://github.com/fleekyzip/WaTelegramGeneratorLink.git](https://github.com/fleekyzip/WaTelegramGeneratorLink.git)
     ```
 
 2.  **Masuk ke Direktori Proyek:**
+
     ```bash
     cd WaTelegramGeneratorLink
     ```
@@ -67,6 +75,7 @@ Ikuti langkah-langkah berikut untuk menginstal dan menjalankan proyek secara lok
 ## 📂 Susunan Project
 
 Struktur utama proyek ini terdiri dari file-file berikut:
+
 ```
 WaTelegramGeneratorLink/
 ├── .gitattributes
@@ -76,28 +85,28 @@ WaTelegramGeneratorLink/
 ├── choices.css # Styling tambahan untuk komponen dropdown.
 └── countries.json # Data JSON yang berisi daftar kode negara.
 ```
+
 <br>
 
 ## 💡 Contoh Penggunaan
 
 Setelah Anda membuka `index.html` di peramban Anda, ikuti langkah-langkah ini:
 
-1.  **Masukkan Detail:** Pilih Kode Negara dan masukkan Nomor Telepon.  
+1.  **Masukkan Detail:** Pilih Kode Negara dan masukkan Nomor Telepon.
 2.  **Hasilkan Tautan:** Setelah semua data terisi, tekan tombol **Generate Link** maka tautan akan otomatis dihasilkan dan ditampilkan di area hasil.
 3.  **Pilih Tipe Tautan:** Pilih antara **WhatsApp** atau **Telegram**.
-
 
 <br>
 
 ## 🤝 Kontribusi
 
-Kontribusi sangat dihargai! Jika Anda memiliki ide untuk fitur baru, perbaikan *bug*, atau peningkatan kode, silakan ikuti langkah-langkah berikut:
+Kontribusi sangat dihargai! Jika Anda memiliki ide untuk fitur baru, perbaikan _bug_, atau peningkatan kode, silakan ikuti langkah-langkah berikut:
 
-1.  *Fork* repositori ini.
+1.  _Fork_ repositori ini.
 2.  Buat cabang baru untuk fitur Anda (`git checkout -b feature/nama-fitur-baru`).
-3.  Lakukan *commit* perubahan Anda (`git commit -m 'feat: Tambahkan fitur baru X'`).
-4.  *Push* ke cabang Anda (`git push origin feature/nama-fitur-baru`).
-5.  Buka *Pull Request* baru.
+3.  Lakukan _commit_ perubahan Anda (`git commit -m 'feat: Tambahkan fitur baru X'`).
+4.  _Push_ ke cabang Anda (`git push origin feature/nama-fitur-baru`).
+5.  Buka _Pull Request_ baru.
 
 <br>
 

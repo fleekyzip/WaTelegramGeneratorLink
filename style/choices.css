@@ -2,10 +2,6 @@
 	.choices {
 		width: 100% !important;
 	}
-
-	.choices[data-type*="select-one"] .choices__inner {
-		width: 100% !important;
-	}
 }
 /* Custom Styling untuk Choices.js */
 .choices {
@@ -13,6 +9,7 @@
 	position: relative;
 	overflow: hidden;
 	font-size: 16px;
+	width: 45%;
 }
 
 .choices[data-type*="select-one"] .choices__inner {
@@ -25,7 +22,7 @@
 	flex-wrap: wrap;
 	align-items: center;
 	padding: 0;
-	width: 210px;
+	width: 100%;
 }
 
 .choices__inner:focus,
