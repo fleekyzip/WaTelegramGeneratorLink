@@ -166,8 +166,15 @@ document
 
 document
 	.getElementById("copy-button-telegram")
-	.addEventListener("click", function (event) {
-		copyToClipboard(generateUpdateLink().telegramLink);
-		changeIcon("copy-button-telegram", "assets/icon-mark.png");
-		showAndCloseAlert("Link Telegram disalin ke clipboard");
+	.addEventListener("click", async function (event) {
+		const success = await copyToClipboard(
+			generateUpdateLink().telegramLink
+		);
+
+		if (success) {
+			changeIcon("copy-button-telegram", "assets/icon-mark.png");
+			showAndCloseAlert("Link Telegram disalin ke clipboard");
+		} else {
+			showAndCloseAlert("Gagal menyalin link");
+		}
 	});
